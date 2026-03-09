@@ -55,8 +55,8 @@ task('typo3:cache:flush', function () {
 
 desc('Fix release permissions');
 task('deploy:permissions', function () {
-    run('chgrp -R {{http_user}} {{release_path}}');
-    run('chmod -R g+rwX {{release_path}}/var {{release_path}}/public/fileadmin {{release_path}}/config/system');
+    run('chgrp -R -f {{http_user}} {{release_path}} || true');
+    run('chmod -R -f g+rwX {{release_path}}/var {{release_path}}/public/fileadmin {{release_path}}/config/system || true');
 });
 
 before('deploy:shared', 'typo3:shared_dirs');
