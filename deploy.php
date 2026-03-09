@@ -8,7 +8,7 @@ require 'recipe/common.php';
 
 set('application', 'typo3-demo');
 set('repository', 'git@github.com:ayushN2T/d13.git');
-set('git_tty', true);
+set('git_tty', false);
 set('keep_releases', 5);
 set('remote_user', 'net2t');
 set('deploy_path', '/var/www/typo3-demo');
@@ -31,6 +31,7 @@ set('shared_dirs', [
 host('production')
     ->setHostname('34.131.188.94')
     ->setRemoteUser('net2t')
+    ->setIdentityFile('~/.ssh/google_compute_engine')
     ->setForwardAgent(true)
     ->set('branch', 'main');
 
@@ -75,5 +76,5 @@ task('deploy', [
     'deploy:vendors',
     'deploy:symlink',
     'deploy:unlock',
-    'cleanup',
+    'deploy:cleanup',
 ]);

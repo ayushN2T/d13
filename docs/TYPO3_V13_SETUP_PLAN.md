@@ -204,7 +204,7 @@ Recommended baseline:
 Known current access:
 
 ```bash
-gcloud compute ssh --zone "asia-south2-a" "deployer" --project "project-204d29c9-73a8-4ffa-99a"
+gcloud compute ssh --zone "asia-south2-c" "deployer" --project "project-204d29c9-73a8-4ffa-99a"
 ```
 
 Current Linux user observed:
@@ -246,7 +246,7 @@ Also fetch the VM public IP from your machine:
 
 ```bash
 gcloud compute instances describe deployer \
-  --zone=asia-south2-a \
+  --zone=asia-south2-c \
   --project=project-204d29c9-73a8-4ffa-99a
 ```
 

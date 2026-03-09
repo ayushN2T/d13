@@ -3,7 +3,7 @@
 Target VM:
 
 - VM name: `deployer`
-- Zone: `asia-south2-a`
+- Zone: `asia-south2-c`
 - Project: `project-204d29c9-73a8-4ffa-99a`
 - Public IP: `34.131.188.94`
 - SSH user: `net2t`
@@ -11,7 +11,7 @@ Target VM:
 ## 1. Connect To The VM
 
 ```bash
-gcloud compute ssh --zone "asia-south2-a" "deployer" --project "project-204d29c9-73a8-4ffa-99a"
+gcloud compute ssh --zone "asia-south2-c" "deployer" --project "project-204d29c9-73a8-4ffa-99a"
 ```
 
 ## 2. Update Packages
