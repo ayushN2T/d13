@@ -50,7 +50,7 @@ task('deploy:vendors', function () {
 
 desc('Flush TYPO3 caches if CLI is available');
 task('typo3:cache:flush', function () {
-    run('if [ -f {{release_path}}/vendor/bin/typo3 ]; then cd {{release_path}} && php vendor/bin/typo3 cache:flush; fi');
+    run('if [ -f {{release_path}}/vendor/bin/typo3 ]; then cd {{release_path}} && php vendor/bin/typo3 cache:flush 2>&1 || echo "TYPO3 cache:flush skipped (setup not complete yet)"; fi');
 });
 
 desc('Fix release permissions');
