@@ -31,7 +31,6 @@ set('shared_dirs', [
 host('production')
     ->setHostname('34.131.188.94')
     ->setRemoteUser('net2t')
-    ->setIdentityFile('~/.ssh/google_compute_engine')
     ->setForwardAgent(true)
     ->set('branch', 'main');
 
