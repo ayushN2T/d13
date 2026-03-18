@@ -13,10 +13,19 @@ set('keep_releases', 5);
 set('remote_user', 'net2t');
 set('deploy_path', '/var/www/typo3-demo');
 set('http_user', 'www-data');
+set('typo3_webroot', 'public');
 set('writable_mode', 'chmod');
 
-// Append any additional writable directories not covered by the default recipe
-add('writable_dirs', [
+set('shared_dirs', [
+    'var',
+    'public/fileadmin',
+    'public/typo3temp',
+]);
+
+set('writable_dirs', [
+    'var',
+    'public/fileadmin',
+    'public/typo3temp',
     'config/system',
 ]);
 
@@ -35,14 +44,24 @@ host('production')
 desc('Prepare shared TYPO3 configuration files');
 task('typo3:shared_dirs', function () {
     run('mkdir -p {{deploy_path}}/shared/config/system');
+    run('mkdir -p {{deploy_path}}/shared/var');
+    run('mkdir -p {{deploy_path}}/shared/public/fileadmin');
+    run('mkdir -p {{deploy_path}}/shared/public/typo3temp');
     run('touch {{deploy_path}}/shared/config/system/settings.php');
     run('touch {{deploy_path}}/shared/config/system/additional.php');
+    run(<<<'BASH'
+if ! grep -q 'trustedHostsPattern' {{deploy_path}}/shared/config/system/additional.php; then
+cat >> {{deploy_path}}/shared/config/system/additional.php <<'PHP'
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['trustedHostsPattern'] = '^(34\.131\.188\.94|127\.0\.0\.1|localhost)$';
+PHP
+fi
+BASH);
 });
 
 desc('Fix release permissions');
 task('deploy:permissions', function () {
-    run('chgrp -R -f {{http_user}} {{release_path}} || true');
-    run('chmod -R -f g+rwX {{release_path}}/var {{release_path}}/public/fileadmin {{release_path}}/config/system || true');
+    run('chgrp -R -f {{http_user}} {{deploy_path}}/shared/var {{deploy_path}}/shared/public/fileadmin {{deploy_path}}/shared/public/typo3temp {{release_path}}/config/system || true');
+    run('chmod -R -f g+rwX {{deploy_path}}/shared/var {{deploy_path}}/shared/public/fileadmin {{deploy_path}}/shared/public/typo3temp {{release_path}}/config/system || true');
 });
 
 before('deploy:shared', 'typo3:shared_dirs');
