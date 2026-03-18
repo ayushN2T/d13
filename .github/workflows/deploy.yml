@@ -34,9 +34,17 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           ssh-keyscan -H 34.131.188.94 >> ~/.ssh/known_hosts
+          chmod 700 ~/.ssh
+          chmod 644 ~/.ssh/known_hosts
 
       - name: Check Deployer Exists
-        run: ls -la vendor/bin && php vendor/bin/dep --version
+        run: |
+          ls -la vendor/bin
+          php vendor/bin/dep --version
+
+      - name: Test Raw SSH Login
+        run: |
+          ssh -vvv -o StrictHostKeyChecking=yes github-actions-deploy@34.131.188.94 "whoami && hostname && pwd"
 
       - name: Run Deployer
         run: php vendor/bin/dep deploy production -vvv
