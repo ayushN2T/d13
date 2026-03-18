@@ -7,7 +7,7 @@ namespace Deployer;
 require 'recipe/typo3.php';
 
 set('application', 'typo3-demo');
-set('repository', 'git@github.com:ayushN2T/d13.git');
+set('repository', 'https://github.com/ayushN2T/d13.git');
 set('git_tty', false);
 set('keep_releases', 5);
 set('deploy_path', '/var/www/typo3-demo');
@@ -37,7 +37,6 @@ set('shared_files', [
 host('production')
     ->setHostname('34.131.188.94')
     ->setRemoteUser('net2t')
-    ->setForwardAgent(true)
     ->set('branch', 'main');
 
 desc('Prepare shared TYPO3 configuration files');
