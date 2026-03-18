@@ -10,7 +10,6 @@ set('application', 'typo3-demo');
 set('repository', 'git@github.com:ayushN2T/d13.git');
 set('git_tty', false);
 set('keep_releases', 5);
-set('remote_user', 'net2t');
 set('deploy_path', '/var/www/typo3-demo');
 set('http_user', 'www-data');
 set('typo3_webroot', 'public');
