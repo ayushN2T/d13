@@ -54,9 +54,5 @@ jobs:
           ls -la vendor/bin
           php vendor/bin/dep --version
 
-      - name: Test Raw SSH Login
-        run: |
-          ssh -vvv net2t@34.131.188.94 "whoami && hostname && pwd"
-
       - name: Run Deployer
         run: php vendor/bin/dep deploy production -vvv
