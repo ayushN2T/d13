@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:smartmaps/Resources/Private/Language/locallang_csh_tx_smartmaps_domain_model_map.xlf" date="2025-06-30T11:07:04Z" product-name="smartmaps">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="width.description" resname="width.description">
+				<source>width</source>
+			</trans-unit>
+			<trans-unit id="height.description" resname="height.description">
+				<source>height</source>
+			</trans-unit>
+			<trans-unit id="zoom.description" resname="zoom.description">
+				<source>zoom</source>
+			</trans-unit>
+			<trans-unit id="zoom_min.description" resname="zoom_min.description">
+				<source>zoomMin</source>
+			</trans-unit>
+			<trans-unit id="zoom_max.description" resname="zoom_max.description">
+				<source>zoomMax</source>
+			</trans-unit>
+			<trans-unit id="default_type.description" resname="default_type.description">
+				<source>defaultType</source>
+			</trans-unit>
+			<trans-unit id="longitude.description" resname="longitude.description">
+				<source>longitude</source>
+			</trans-unit>
+			<trans-unit id="latitude.description" resname="latitude.description">
+				<source>latitude</source>
+			</trans-unit>
+			<trans-unit id="marker_cluster.description" resname="marker_cluster.description">
+				<source>markerCluster</source>
+			</trans-unit>
+			<trans-unit id="marker_cluster_zoom.description" resname="marker_cluster_zoom.description">
+				<source>markerClusterZoom</source>
+			</trans-unit>
+			<trans-unit id="marker_cluster_size.description" resname="marker_cluster_size.description">
+				<source>markerClusterSize</source>
+			</trans-unit>
+			<trans-unit id="defaultmarker.description" resname="defaultmarker.description">
+				<source>defaultmarker</source>
+			</trans-unit>
+			<trans-unit id="address.description" resname="address.description">
+				<source>address</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:ns="http://typo3.org/ns/NET2TYPO/Smartmaps/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="content">
+
+<f:if condition="{categories}">
+    <div class="category-filter-container">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter-{data}">
+            <option value="">All Categories</option>
+            <f:for each="{categories}" as="category">
+                <option value="{category.uid}">{category.title}</option>
+            </f:for>
+        </select>
+    </div>
+</f:if>
+
+<div id="{map.title}"  class="smartmap-container" style="height: {map.height}; width: {map.width};"></div>
+<f:render partial="Script/MapInit" arguments="{_all}" />
+</f:section>
+</html>

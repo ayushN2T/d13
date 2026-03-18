@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:smartmaps/Resources/Private/Language/locallang_csh_tx_smartmaps_domain_model_address.xlf" date="2025-06-30T11:07:04Z" product-name="smartmaps">
+		<header/>
+		<body>
+			<trans-unit id="title.description" resname="title.description">
+				<source>title</source>
+			</trans-unit>
+			<trans-unit id="street.description" resname="street.description">
+				<source>street</source>
+			</trans-unit>
+			<trans-unit id="city.description" resname="city.description">
+				<source>city</source>
+			</trans-unit>
+			<trans-unit id="zip.description" resname="zip.description">
+				<source>zip</source>
+			</trans-unit>
+			<trans-unit id="country.description" resname="country.description">
+				<source>country</source>
+			</trans-unit>
+			<trans-unit id="latitude.description" resname="latitude.description">
+				<source>latitude</source>
+			</trans-unit>
+			<trans-unit id="longitude.description" resname="longitude.description">
+				<source>longitude</source>
+			</trans-unit>
+			<trans-unit id="marker.description" resname="marker.description">
+				<source>marker</source>
+			</trans-unit>
+			<trans-unit id="configuration_map.description" resname="configuration_map.description">
+				<source>configurationMap</source>
+			</trans-unit>
+			<trans-unit id="image_size.description" resname="image_size.description">
+				<source>imageSize</source>
+			</trans-unit>
+			<trans-unit id="image_width.description" resname="image_width.description">
+				<source>imageWidth</source>
+			</trans-unit>
+			<trans-unit id="image_height.description" resname="image_height.description">
+				<source>imageHeight</source>
+			</trans-unit>
+			<trans-unit id="info_window_content.description" resname="info_window_content.description">
+				<source>infoWindowContent</source>
+			</trans-unit>
+			<trans-unit id="info_window_link.description" resname="info_window_link.description">
+				<source>infoWindowLink</source>
+			</trans-unit>
+			<trans-unit id="info_window_image.description" resname="info_window_image.description">
+				<source>infoWindowImage</source>
+			</trans-unit>
+			<trans-unit id="categories.description" resname="categories.description">
+				<source>categories</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

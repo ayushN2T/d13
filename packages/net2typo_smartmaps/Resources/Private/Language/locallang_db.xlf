@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:smartmaps/Resources/Private/Language/locallang_db.xlf" date="2025-06-30T11:07:04Z" product-name="smartmaps">
+		<header/>
+		<body>
+			<trans-unit id="tx_smartmaps_domain_model_address" resname="tx_smartmaps_domain_model_address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.description" resname="tx_smartmaps_domain_model_address.description">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.title" resname="tx_smartmaps_domain_model_address.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.title.description" resname="tx_smartmaps_domain_model_address.title.description">
+				<source>Enter the title for the address.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.street" resname="tx_smartmaps_domain_model_address.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.street.description" resname="tx_smartmaps_domain_model_address.street.description">
+				<source>Enter the street for the address.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.city" resname="tx_smartmaps_domain_model_address.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.city.description" resname="tx_smartmaps_domain_model_address.city.description">
+				<source>Enter the city for the address.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.zip" resname="tx_smartmaps_domain_model_address.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.zip.description" resname="tx_smartmaps_domain_model_address.zip.description">
+				<source>Enter the zip code for the address.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.country" resname="tx_smartmaps_domain_model_address.country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.country.description" resname="tx_smartmaps_domain_model_address.country.description">
+				<source>Enter the country for the address.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.latitude" resname="tx_smartmaps_domain_model_address.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.latitude.description" resname="tx_smartmaps_domain_model_address.latitude.description">
+				<source>Enter the latitude for the address.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.longitude" resname="tx_smartmaps_domain_model_address.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.longitude.description" resname="tx_smartmaps_domain_model_address.longitude.description">
+				<source>Enter the longitude for the address.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.marker" resname="tx_smartmaps_domain_model_address.marker">
+				<source>Marker</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.marker.description" resname="tx_smartmaps_domain_model_address.marker.description">
+				<source>Select a marker for the address.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.configuration_map" resname="tx_smartmaps_domain_model_address.configuration_map">
+				<source>Configuration Map</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.configuration_map.description" resname="tx_smartmaps_domain_model_address.configuration_map.description">
+				<source>Configure the map settings.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_size" resname="tx_smartmaps_domain_model_address.image_size">
+				<source>Image Size</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_size.description" resname="tx_smartmaps_domain_model_address.image_size.description">
+				<source>Enable custom image size.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_width" resname="tx_smartmaps_domain_model_address.image_width">
+				<source>Image Width</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_width.description" resname="tx_smartmaps_domain_model_address.image_width.description">
+				<source>Enter the width of the image.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_height" resname="tx_smartmaps_domain_model_address.image_height">
+				<source>Image Height</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_height.description" resname="tx_smartmaps_domain_model_address.image_height.description">
+				<source>Enter the height of the image.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_content" resname="tx_smartmaps_domain_model_address.info_window_content">
+				<source>Info Window Content</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_content.description" resname="tx_smartmaps_domain_model_address.info_window_content.description">
+				<source>Enter the content for the info window.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_link" resname="tx_smartmaps_domain_model_address.info_window_link">
+				<source>Info Window Link</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_link.description" resname="tx_smartmaps_domain_model_address.info_window_link.description">
+				<source>Enter the link for the info window.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_image" resname="tx_smartmaps_domain_model_address.info_window_image">
+				<source>Info Window Image</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_image.description" resname="tx_smartmaps_domain_model_address.info_window_image.description">
+				<source>Select an image for the info window.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.categories" resname="tx_smartmaps_domain_model_address.categories">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.categories.description" resname="tx_smartmaps_domain_model_address.categories.description">
+				<source>Select categories for the address.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map" resname="tx_smartmaps_domain_model_map">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.description" resname="tx_smartmaps_domain_model_map.description">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.title" resname="tx_smartmaps_domain_model_map.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.title.description" resname="tx_smartmaps_domain_model_map.title.description">
+				<source>Will be used as ID (without space character, special character!).</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.width" resname="tx_smartmaps_domain_model_map.width">
+				<source>Width</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.width.description" resname="tx_smartmaps_domain_model_map.width.description">
+				<source>Enter the width of the map.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.height" resname="tx_smartmaps_domain_model_map.height">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.height.description" resname="tx_smartmaps_domain_model_map.height.description">
+				<source>Enter the height of the map.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom" resname="tx_smartmaps_domain_model_map.zoom">
+				<source>Zoom</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom.description" resname="tx_smartmaps_domain_model_map.zoom.description">
+				<source>Enter the zoom level for the map.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom_min" resname="tx_smartmaps_domain_model_map.zoom_min">
+				<source>Zoom Min</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom_min.description" resname="tx_smartmaps_domain_model_map.zoom_min.description">
+				<source>Enter the minimum zoom level for the map.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom_max" resname="tx_smartmaps_domain_model_map.zoom_max">
+				<source>Zoom Max</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom_max.description" resname="tx_smartmaps_domain_model_map.zoom_max.description">
+				<source>Enter the maximum zoom level for the map.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.default_type" resname="tx_smartmaps_domain_model_map.default_type">
+				<source>Default Type</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.default_type.description" resname="tx_smartmaps_domain_model_map.default_type.description">
+				<source>Select the default map type.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.longitude" resname="tx_smartmaps_domain_model_map.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.longitude.description" resname="tx_smartmaps_domain_model_map.longitude.description">
+				<source>Enter the longitude for the map center.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.latitude" resname="tx_smartmaps_domain_model_map.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.latitude.description" resname="tx_smartmaps_domain_model_map.latitude.description">
+				<source>Enter the latitude for the map center.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster" resname="tx_smartmaps_domain_model_map.marker_cluster">
+				<source>Marker Cluster</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster.description" resname="tx_smartmaps_domain_model_map.marker_cluster.description">
+				<source>Enable marker clustering.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster_zoom" resname="tx_smartmaps_domain_model_map.marker_cluster_zoom">
+				<source>Marker Cluster Zoom</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster_zoom.description" resname="tx_smartmaps_domain_model_map.marker_cluster_zoom.description">
+				<source>Enter the maximum zoom level for marker clustering.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster_size" resname="tx_smartmaps_domain_model_map.marker_cluster_size">
+				<source>Marker Cluster Size</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster_size.description" resname="tx_smartmaps_domain_model_map.marker_cluster_size.description">
+				<source>Enter the size of the marker cluster.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.defaultmarker" resname="tx_smartmaps_domain_model_map.defaultmarker">
+				<source>Defaultmarker</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.defaultmarker.description" resname="tx_smartmaps_domain_model_map.defaultmarker.description">
+				<source>Enter the default marker for the map.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.address" resname="tx_smartmaps_domain_model_map.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.address.description" resname="tx_smartmaps_domain_model_map.address.description">
+				<source>Select the addresses to display on the map.</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_smartmap.name" resname="tx_smartmaps_smartmap.name">
+				<source>Smartmap</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_smartmap.description" resname="tx_smartmaps_smartmap.description">
+				<source></source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.display.default.0" resname="tx_smartmaps_domain_model_map.display.default.0">
+				<source>lightmode (Standard)</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.display.default.1" resname="tx_smartmaps_domain_model_map.display.default.1">
+				<source>darkmode</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.display.default.2" resname="tx_smartmaps_domain_model_map.display.default.2">
+				<source>greyscale</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.display.default.3" resname="tx_smartmaps_domain_model_map.display.default.3">
+				<source>colorblind</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.display.default.4" resname="tx_smartmaps_domain_model_map.display.default.4">
+				<source>auto</source>
+			</trans-unit>
+			<trans-unit id="sys_category.tab.map">
+				<source>Map Marker Settings</source>
+			</trans-unit>
+			<trans-unit id="sys_category.palette.marker">
+				<source>Map Marker</source>
+			</trans-unit>
+			<trans-unit id="sys_category.map_marker">
+				<source>Map Marker Image</source>
+			</trans-unit>
+			<trans-unit id="sys_category.map_image_size">
+				<source>Use Custom Image Size</source>
+			</trans-unit>
+			<trans-unit id="sys_category.map_image_width">
+				<source>Custom Width</source>
+			</trans-unit>
+			<trans-unit id="sys_category.map_image_height">
+				<source>Custom Height</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

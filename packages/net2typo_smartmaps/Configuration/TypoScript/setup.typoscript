@@ -1,0 +1,48 @@
+plugin.tx_smartmaps_smartmap {
+    view {
+        templateRootPaths.0 = EXT:smartmaps/Resources/Private/Templates/
+        templateRootPaths.1 = {$plugin.tx_smartmaps_smartmap.view.templateRootPath}
+        partialRootPaths.0 = EXT:smartmaps/Resources/Private/Partials/
+        partialRootPaths.1 = {$plugin.tx_smartmaps_smartmap.view.partialRootPath}
+        layoutRootPaths.0 = EXT:smartmaps/Resources/Private/Layouts/
+        layoutRootPaths.1 = {$plugin.tx_smartmaps_smartmap.view.layoutRootPath}
+    }
+    persistence {
+        storagePid = {$plugin.tx_smartmaps_smartmap.persistence.storagePid}
+        #recursive = 1
+    }
+    features {
+        #skipDefaultArguments = 1
+        # if set to 1, the enable fields are ignored in BE context
+        ignoreAllEnableFieldsInBe = 0
+    }
+    mvc {
+        #callDefaultActionIfActionCantBeResolved = 1
+    }
+    settings {
+      apiKey = {$plugin.tx_smartmaps_smartmap.settings.apiKey}
+	}
+}
+page.includeCSS.smartmap = {$plugin.tx_smartmaps_smartmap.settings.cssFile}
+plugin.tx_smartmaps_smartmap.features.requireCHashArgumentForActionArguments = 0
+
+ajax = PAGE
+ajax {
+  typeNum = 1751262396
+    config{
+        disableAllHeaderCode = 1
+        additionalHeaders = Content-Type: application/json
+        no_cache = 1
+    }
+  10 = USER
+  10 {
+    userFunc = TYPO3\CMS\Extbase\Core\Bootstrap->run
+    extensionName = Smartmaps
+    pluginName = Fetchcordinates
+    vendorName = NET2TYPO
+    controller = Map
+    action = fetch
+    settings < plugin.tx_smartmaps_smartmap.settings
+    persistence < plugin.tx_smartmaps_smartmap.persistence
+  }
+}

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:smartmaps/Resources/Private/Language/locallang.xlf" date="2025-06-30T11:07:04Z" product-name="smartmaps">
+		<header/>
+		<body>
+			<trans-unit id="tx_smartmaps_domain_model_address" resname="tx_smartmaps_domain_model_address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.description" resname="tx_smartmaps_domain_model_address.description">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.title" resname="tx_smartmaps_domain_model_address.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.title.description" resname="tx_smartmaps_domain_model_address.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.street" resname="tx_smartmaps_domain_model_address.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.street.description" resname="tx_smartmaps_domain_model_address.street.description">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.city" resname="tx_smartmaps_domain_model_address.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.city.description" resname="tx_smartmaps_domain_model_address.city.description">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.zip" resname="tx_smartmaps_domain_model_address.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.zip.description" resname="tx_smartmaps_domain_model_address.zip.description">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.country" resname="tx_smartmaps_domain_model_address.country">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.country.description" resname="tx_smartmaps_domain_model_address.country.description">
+				<source>Country</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.latitude" resname="tx_smartmaps_domain_model_address.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.latitude.description" resname="tx_smartmaps_domain_model_address.latitude.description">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.longitude" resname="tx_smartmaps_domain_model_address.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.longitude.description" resname="tx_smartmaps_domain_model_address.longitude.description">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.marker" resname="tx_smartmaps_domain_model_address.marker">
+				<source>Marker</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.marker.description" resname="tx_smartmaps_domain_model_address.marker.description">
+				<source>Marker</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.configuration_map" resname="tx_smartmaps_domain_model_address.configuration_map">
+				<source>Configuration Map</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.configuration_map.description" resname="tx_smartmaps_domain_model_address.configuration_map.description">
+				<source>Configuration Map</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_size" resname="tx_smartmaps_domain_model_address.image_size">
+				<source>Image Size</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_size.description" resname="tx_smartmaps_domain_model_address.image_size.description">
+				<source>Image Size</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_width" resname="tx_smartmaps_domain_model_address.image_width">
+				<source>Image Width</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_width.description" resname="tx_smartmaps_domain_model_address.image_width.description">
+				<source>Image Width</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_height" resname="tx_smartmaps_domain_model_address.image_height">
+				<source>Image Height</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.image_height.description" resname="tx_smartmaps_domain_model_address.image_height.description">
+				<source>Image Height</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_content" resname="tx_smartmaps_domain_model_address.info_window_content">
+				<source>Info Window Content</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_content.description" resname="tx_smartmaps_domain_model_address.info_window_content.description">
+				<source>Info Window Content</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_link" resname="tx_smartmaps_domain_model_address.info_window_link">
+				<source>Info Window Link</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_link.description" resname="tx_smartmaps_domain_model_address.info_window_link.description">
+				<source>Info Window Link</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_image" resname="tx_smartmaps_domain_model_address.info_window_image">
+				<source>Info Window Image</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.info_window_image.description" resname="tx_smartmaps_domain_model_address.info_window_image.description">
+				<source>Info Window Image</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.categories" resname="tx_smartmaps_domain_model_address.categories">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_address.categories.description" resname="tx_smartmaps_domain_model_address.categories.description">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map" resname="tx_smartmaps_domain_model_map">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.description" resname="tx_smartmaps_domain_model_map.description">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.title" resname="tx_smartmaps_domain_model_map.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.title.description" resname="tx_smartmaps_domain_model_map.title.description">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.width" resname="tx_smartmaps_domain_model_map.width">
+				<source>Width</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.width.description" resname="tx_smartmaps_domain_model_map.width.description">
+				<source>Width</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.height" resname="tx_smartmaps_domain_model_map.height">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.height.description" resname="tx_smartmaps_domain_model_map.height.description">
+				<source>Height</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom" resname="tx_smartmaps_domain_model_map.zoom">
+				<source>Zoom</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom.description" resname="tx_smartmaps_domain_model_map.zoom.description">
+				<source>Zoom</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom_min" resname="tx_smartmaps_domain_model_map.zoom_min">
+				<source>Zoom Min</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom_min.description" resname="tx_smartmaps_domain_model_map.zoom_min.description">
+				<source>Zoom Min</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom_max" resname="tx_smartmaps_domain_model_map.zoom_max">
+				<source>Zoom Max</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.zoom_max.description" resname="tx_smartmaps_domain_model_map.zoom_max.description">
+				<source>Zoom Max</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.default_type" resname="tx_smartmaps_domain_model_map.default_type">
+				<source>Default Type</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.default_type.description" resname="tx_smartmaps_domain_model_map.default_type.description">
+				<source>Default Type</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.longitude" resname="tx_smartmaps_domain_model_map.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.longitude.description" resname="tx_smartmaps_domain_model_map.longitude.description">
+				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.latitude" resname="tx_smartmaps_domain_model_map.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.latitude.description" resname="tx_smartmaps_domain_model_map.latitude.description">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster" resname="tx_smartmaps_domain_model_map.marker_cluster">
+				<source>Marker Cluster</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster.description" resname="tx_smartmaps_domain_model_map.marker_cluster.description">
+				<source>Marker Cluster</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster_zoom" resname="tx_smartmaps_domain_model_map.marker_cluster_zoom">
+				<source>Marker Cluster Zoom</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster_zoom.description" resname="tx_smartmaps_domain_model_map.marker_cluster_zoom.description">
+				<source>Marker Cluster Zoom</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster_size" resname="tx_smartmaps_domain_model_map.marker_cluster_size">
+				<source>Marker Cluster Size</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.marker_cluster_size.description" resname="tx_smartmaps_domain_model_map.marker_cluster_size.description">
+				<source>Marker Cluster Size</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.defaultmarker" resname="tx_smartmaps_domain_model_map.defaultmarker">
+				<source>Defaultmarker</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.defaultmarker.description" resname="tx_smartmaps_domain_model_map.defaultmarker.description">
+				<source>Defaultmarker</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.address" resname="tx_smartmaps_domain_model_map.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_smartmaps_domain_model_map.address.description" resname="tx_smartmaps_domain_model_map.address.description">
+				<source>Address</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

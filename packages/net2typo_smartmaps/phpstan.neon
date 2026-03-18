@@ -1,0 +1,13 @@
+includes:
+    - .Build/vendor/friendsoftypo3/phpstan-typo3/extension.neon
+    - .Build/vendor/phpstan/phpstan-phpunit/extension.neon
+    - .Build/vendor/phpstan/phpstan-strict-rules/rules.neon
+
+parameters:
+    level: 5
+    paths:
+        - Classes
+        - Tests
+    tmpDir: .Build/phpstan
+    bootstrapFiles:
+        - .Build/vendor/autoload.php

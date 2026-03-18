@@ -1,0 +1,132 @@
+
+<f:variable name="mapScript">
+(function() {
+    const centerLat = <f:format.htmlspecialchars>{map.latitude}</f:format.htmlspecialchars>;
+    const centerLng = <f:format.htmlspecialchars>{map.longitude}</f:format.htmlspecialchars>;
+    let mapStyle = 'lightmode';
+    switch (<f:format.htmlspecialchars>{map.defaultType}</f:format.htmlspecialchars>) {
+        case 0: mapStyle = 'lightmode'; break;
+        case 1: mapStyle = 'darkmode'; break;
+        case 2: mapStyle = 'greyscale'; break;
+        case 3: mapStyle = 'colorblind'; break;
+        case 4: mapStyle = 'auto'; break;
+    }
+
+    ym.ready(function (modules) {
+        const map = ym.map(<f:format.htmlspecialchars>{map.title}</f:format.htmlspecialchars>, {
+            center: ym.latLng(centerLat, centerLng),
+            zoom: <f:format.htmlspecialchars>{map.zoom}</f:format.htmlspecialchars>,
+            style: mapStyle,
+            minZoom: <f:format.htmlspecialchars>{map.zoomMin}</f:format.htmlspecialchars>,
+            maxZoom: <f:format.htmlspecialchars>{map.zoomMax}</f:format.htmlspecialchars>,
+        });
+
+        // Default custom icon
+        <f:if condition="{map.defaultmarker}">
+            const defaultIconUrl = "<f:uri.image image='{map.defaultmarker}' absolute='1' />";
+            const defaultIcon = new modules.provider.Icon({
+                iconUrl: defaultIconUrl,
+                iconRetinaUrl: defaultIconUrl,
+                iconSize: [30, 49],
+                iconAnchor: [15, 49],
+                popupAnchor: [0, -48]
+            });
+        </f:if>
+
+        // Initialize clustering group
+        const markers = ym.markerClusterGroup({
+            disableClusteringAtZoom: <f:format.htmlspecialchars>{map.markerClusterZoom}</f:format.htmlspecialchars>,
+            maxClusterRadius: <f:format.htmlspecialchars>{map.markerClusterSize}</f:format.htmlspecialchars>,
+        });
+
+        const allMarkers = [];
+
+        // Add markers
+        <f:for each="{map.address}" as="address" iteration="iter">
+        (function() {
+            const lat = <f:format.raw>{address.latitude}</f:format.raw>;
+            const lng = <f:format.raw>{address.longitude}</f:format.raw>;
+            const pos = ym.latLng(lat, lng);
+            const marker = new modules.provider.Marker(pos);
+            marker.categories = [<f:for each="{address.categories}" as="category" iteration="catIter">{category.uid}<f:if condition="!{catIter.isLast}">, </f:if></f:for>];
+
+            // Set default icon
+            <f:if condition="{map.defaultmarker}">
+                marker.setIcon(defaultIcon);
+            </f:if>
+            // If a custom marker image is defined
+            <f:if condition="{address.categories.0.mapMarker} && !{address.marker}">
+                const imageUrl = "<f:uri.image image='{address.categories.0.mapMarker}' absolute='1' />";
+                const customIcon = new modules.provider.Icon({
+                    iconUrl: imageUrl,
+                    iconRetinaUrl: imageUrl,
+                    <f:if condition="{address.categories.0.mapImageSize}">
+                        <f:then>
+                            iconSize: [<f:format.raw>{address.categories.0.mapImageWidth}</f:format.raw>, <f:format.raw>{address.categories.0.mapImageHeight}</f:format.raw>],
+                        </f:then>
+                        <f:else>
+                            iconSize: [30, 49],
+                        </f:else>
+                    </f:if>
+                    iconAnchor: [15, 49],
+                    popupAnchor: [0, -48]
+                });
+                marker.setIcon(customIcon);
+            </f:if>
+            <f:if condition="{address.marker}">
+                const imageUrl = "<f:uri.image image='{address.marker}' absolute='1' />";
+                const customIcon = new modules.provider.Icon({
+                    iconUrl: imageUrl,
+                    iconRetinaUrl: imageUrl,
+                    <f:if condition="{address.imageSize}">
+                        <f:then>
+                            iconSize: [<f:format.raw>{address.imageWidth}</f:format.raw>, <f:format.raw>{address.imageHeight}</f:format.raw>],
+                        </f:then>
+                        <f:else>
+                            iconSize: [30, 49],
+                        </f:else>
+                    </f:if>
+                    iconAnchor: [15, 49],
+                    popupAnchor: [0, -48]
+                });
+                marker.setIcon(customIcon);
+            </f:if>
+
+            // Optional info window
+            <f:if condition="{address.infoWindowContent} ">
+                marker.bindPopup(`
+                    <f:if condition="{address.infoWindowContent}">
+                        <f:format.raw>{address.infoWindowContent}</f:format.raw><br>
+                    </f:if>
+                    <f:if condition="{address.infoWindowImage} ">
+                        <f:image image="{address.infoWindowImage}" class="info-window-image" /><br>
+                    </f:if>
+                `);
+            </f:if>
+
+            allMarkers.push(marker);
+        })();
+        </f:for>
+
+        function updateMarkers(selectedCategory) {
+            markers.clearLayers();
+            const filteredMarkers = selectedCategory ? allMarkers.filter(m => m.categories.includes(parseInt(selectedCategory))) : allMarkers;
+            filteredMarkers.forEach(m => markers.addLayer(m));
+        }
+
+        updateMarkers(null);
+
+        // Add the clustered markers to the map
+        map.addLayer(markers);
+
+        const categoryFilter = document.getElementById('category-filter-<f:format.htmlspecialchars>{data}</f:format.htmlspecialchars>');
+        if (categoryFilter) {
+            categoryFilter.addEventListener('change', function() {
+                updateMarkers(this.value);
+            });
+        }
+    });
+})();
+</f:variable>
+
+<ns:addJsInlineCode content="{mapScript}" filename="smartmaps_{data}.js"></ns:addJsInlineCode>

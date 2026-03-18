@@ -1,0 +1,40 @@
+{
+    "name": "friendsoftypo3/phpstan-typo3",
+    "type": "phpstan-extension",
+    "description": "TYPO3 rules for PHPStan",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": "^7.2 || ^8.0 || ^8.1",
+        "phpstan/phpstan": "^0.12.99 || ^1.2.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.3",
+        "jangregor/phpstan-prophecy": "^0.6.2",
+        "phpunit/phpunit": "^8.5",
+        "symplify/easy-coding-standard": "^7.2",
+        "typo3/cms-core": "^10.4 || 11.*.*@dev",
+        "typo3/cms-extbase": "^10.4 || 11.*.*@dev"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true,
+            "ergebnis/composer-normalize": true
+        },
+        "platform": {
+            "php": "7.2"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "FriendsOfTYPO3\\PHPStan\\TYPO3\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FriendsOfTYPO3\\PHPStan\\TYPO3\\Tests\\": "tests/"
+        }
+    }
+}

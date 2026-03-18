@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e16b7630dc9074b9241fba7d6a0e74a",
+    "content-hash": "f6f4a43713b54b6340c42f8629fa370c",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -1484,6 +1484,67 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.10.0"
             },
             "time": "2025-07-25T09:04:22+00:00"
+        },
+        {
+            "name": "net2typo/smartmaps",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/net2typo_smartmaps",
+                "reference": "4f8574a2bccf078aed1cde69147e9dd1fdf351a9"
+            },
+            "require": {
+                "typo3/cms-core": "^12 || ^13"
+            },
+            "replace": {
+                "typo3-ter/smartmaps": "self.version"
+            },
+            "require-dev": {
+                "friendsoftypo3/phpstan-typo3": "^0.9",
+                "phpstan/phpstan": "^1.12",
+                "phpstan/phpstan-phpunit": "^1.4",
+                "phpstan/phpstan-strict-rules": "^1.6",
+                "phpunit/phpunit": "^11.5",
+                "typo3/testing-framework": "^8.0"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "web-dir": ".Build/public",
+                    "extension-key": "smartmaps"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "NET2TYPO\\Smartmaps\\": "Classes"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "NET2TYPO\\Smartmaps\\Tests\\": "Tests"
+                }
+            },
+            "scripts": {
+                "test:unit": [
+                    ".Build/bin/phpunit -c phpunit.xml.dist"
+                ],
+                "test:unit:coverage": [
+                    "XDEBUG_MODE=coverage .Build/bin/phpunit -c phpunit.xml.dist --coverage-text"
+                ],
+                "stan": [
+                    ".Build/bin/phpstan analyse -c phpstan.neon"
+                ],
+                "post-autoload-dump": [
+                    "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "smartmap integration for typo3",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "nikic/php-parser",
@@ -7610,7 +7671,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "net2typo/smartmaps": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {},

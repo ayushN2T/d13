@@ -1,0 +1,29 @@
+parameters:
+  bootstrapFiles:
+    - phpstan.bootstrap.php
+
+services:
+  -
+    class: FriendsOfTYPO3\PHPStan\TYPO3\Type\GeneralUtilityDynamicReturnTypeExtension
+    tags:
+      - phpstan.broker.dynamicStaticMethodReturnTypeExtension
+  -
+    class: FriendsOfTYPO3\PHPStan\TYPO3\Type\ContextGetAspectDynamicReturnTypeExtension
+    tags:
+      - phpstan.broker.dynamicMethodReturnTypeExtension
+  -
+    class: FriendsOfTYPO3\PHPStan\TYPO3\Type\ObjectManagerGetDynamicReturnTypeExtension
+    tags:
+      - phpstan.broker.dynamicMethodReturnTypeExtension
+  -
+    class: FriendsOfTYPO3\PHPStan\TYPO3\Type\ObjectManagerInterfaceGetDynamicReturnTypeExtension
+    tags:
+      - phpstan.broker.dynamicMethodReturnTypeExtension
+  -
+    class: FriendsOfTYPO3\PHPStan\TYPO3\Type\QueryExecuteReturnTypeExtension
+    tags:
+      - phpstan.broker.dynamicMethodReturnTypeExtension
+  -
+    class: FriendsOfTYPO3\PHPStan\TYPO3\Type\QueryInterfaceExecuteReturnTypeExtension
+    tags:
+      - phpstan.broker.dynamicMethodReturnTypeExtension

@@ -1,0 +1,20 @@
+plugin.tx_smartmaps_smartmap {
+    view {
+        # cat=plugin.tx_smartmaps_smartmap/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:smartmaps/Resources/Private/Templates/
+        # cat=plugin.tx_smartmaps_smartmap/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:smartmaps/Resources/Private/Partials/
+        # cat=plugin.tx_smartmaps_smartmap/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:smartmaps/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_smartmaps_smartmap//a; type=string; label=Default storage PID
+        storagePid =
+    }
+    settings {
+		# cat=plugin.tx_smartmaps_smartmap//c; type=text+; label = API Key: see 
+		apiKey =
+        # cat=plugin.tx_smartmaps_smartmap//c; type=text+; label = Css file
+        cssFile = EXT:smartmaps/Resources/Public/Css/smartmap.css
+    }
+}

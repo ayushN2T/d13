@@ -1,0 +1,53 @@
+{
+    "name": "net2typo/smartmaps",
+    "type": "typo3-cms-extension",
+    "description": "smartmap integration for typo3",
+    "authors": [],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^12 || ^13"
+    },
+    "require-dev": {
+        "friendsoftypo3/phpstan-typo3": "^0.9",
+        "phpstan/phpstan": "^1.12",
+        "phpstan/phpstan-phpunit": "^1.4",
+        "phpstan/phpstan-strict-rules": "^1.6",
+        "phpunit/phpunit": "^11.5",
+        "typo3/testing-framework": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NET2TYPO\\Smartmaps\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NET2TYPO\\Smartmaps\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/smartmaps": "self.version"
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        },
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "test:unit": ".Build/bin/phpunit -c phpunit.xml.dist",
+        "test:unit:coverage": "XDEBUG_MODE=coverage .Build/bin/phpunit -c phpunit.xml.dist --coverage-text",
+        "stan": ".Build/bin/phpstan analyse -c phpstan.neon",
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "web-dir": ".Build/public",
+            "extension-key": "smartmaps"
+        }
+    }
+}
