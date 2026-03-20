@@ -14,6 +14,8 @@ set('deploy_path', '/var/www/typo3-demo');
 set('http_user', 'www-data');
 set('typo3_webroot', 'public');
 set('writable_mode', 'chmod');
+set('aws_public_host_pattern', 'ec2-23-20-53-135\.compute-1\.amazonaws\.com');
+set('aws_public_ip_pattern', '23\.20\.53\.135');
 
 set('shared_dirs', [
     'var',
@@ -35,8 +37,8 @@ set('shared_files', [
 ]);
 
 host('production')
-    ->setHostname('34.131.188.94')
-    ->setRemoteUser('net2t')
+    ->setHostname('aws-typo3')
+    ->setRemoteUser('ubuntu')
     ->set('branch', 'main');
 
 desc('Prepare shared TYPO3 configuration files');
@@ -50,7 +52,7 @@ task('typo3:shared_dirs', function () {
     run(<<<'BASH'
 if ! grep -q 'trustedHostsPattern' {{deploy_path}}/shared/config/system/additional.php; then
 cat >> {{deploy_path}}/shared/config/system/additional.php <<'PHP'
-$GLOBALS['TYPO3_CONF_VARS']['SYS']['trustedHostsPattern'] = '^(34\.131\.188\.94|127\.0\.0\.1|localhost)$';
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['trustedHostsPattern'] = '^({{aws_public_host_pattern}}|{{aws_public_ip_pattern}}|127\.0\.0\.1|localhost)$';
 PHP
 fi
 BASH);
