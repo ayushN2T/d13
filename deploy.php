@@ -37,8 +37,9 @@ set('shared_files', [
 ]);
 
 host('production')
-    ->setHostname('aws-typo3')
+    ->setHostname('ec2-23-20-53-135.compute-1.amazonaws.com')
     ->setRemoteUser('ubuntu')
+    ->setIdentityFile('/var/www/html/typo3aws.pem')
     ->set('branch', 'main');
 
 desc('Prepare shared TYPO3 configuration files');
