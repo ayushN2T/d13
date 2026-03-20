@@ -10,7 +10,7 @@ set('application', 'typo3-demo');
 set('repository', 'https://github.com/ayushN2T/d13.git');
 set('git_tty', false);
 set('keep_releases', 5);
-set('deploy_path', '/var/www/typo3-demo');
+set('deploy_path', '/var/www/html');
 set('http_user', 'www-data');
 set('typo3_webroot', 'public');
 set('writable_mode', 'chmod');
